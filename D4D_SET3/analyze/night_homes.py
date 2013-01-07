@@ -7,7 +7,7 @@ from collections import OrderedDict
 
 def find_home(data, home, c):
     
-    for usr in data.keys():
+    for usr in data.iterkeys():
         #print(data[usr])
         #data[usr] = OrderedDict(sorted(data[usr].items(), key=lambda t: t[1], reverse=True)) 
         home[usr] = home.get(usr, {})
